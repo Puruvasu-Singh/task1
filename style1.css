@@ -1,0 +1,80 @@
+body {
+    background-color: #c7f9cc;
+}
+
+
+.correct {
+    background-color: #79a04a;
+}
+
+
+
+table {
+    background-color: #38a3a5;
+    margin: 10px;
+    border-color: black;
+    padding: 10px;
+    border-radius: 8%;
+}
+
+
+tbody td {
+    background-color: #52b788;
+    border-radius: 25%;
+
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 900;
+    color: #FB8500;
+    text-decoration: underline blueviolet;
+    text-transform: uppercase;
+}
+
+.grid {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid button {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 25%;
+    margin: 5px;
+
+}
+
+
+
+
+/* .grid button:hover {
+    background-color: #d8f3dc;
+} */
+
+.grid button:active {
+    background-color: #aad576;
+}
+
+div {
+    text-align: center;
+    border-color: #c7f9cc;
+}
+
+a {
+    font-size: 70px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#normal {
+    color: #023a12;
+}
+
+#hacker {
+    color: rgb(168, 30, 30);
+}

@@ -1,0 +1,61 @@
+body {
+    background-color: #c7f9cc;
+}
+
+
+.correct {
+    background-color: #aad576;
+}
+
+.correct:active {
+    background-color: #FB8500;
+}
+
+table {
+    background-color: #38a3a5;
+    margin: 20px;
+    border-color: black;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+
+tbody td {
+    background-color: #52b788;
+    border-radius: 25%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 900;
+    color: #FB8500;
+    text-decoration: underline blueviolet;
+    text-transform: uppercase;
+}
+
+.grid {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid button {
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 25%;
+    margin: 5px;
+}
+
+
+.grid button:active {
+    background-color: #aad576;
+}
+
+.scoreAndTime {
+    height: 70px;
+    font-size: 50px;
+    border: 100px;
+    text-align: center;
+}
