@@ -12,8 +12,10 @@ h1 {
 }
 
 div {
+    margin: 100px;
+    border: 10px;
     text-align: center;
-    border-color: #c7f9cc;
+    background-color: #b8c0ff;
 }
 
 
