@@ -29,7 +29,7 @@ function isSimilar(list2, list1) {
     return true;
 }
 
-// TODO: displaying correct tiles:
+//displaying correct tiles:
 let display = function (i) {
     buttons[i].classList.toggle('correct');
 }
