@@ -1,0 +1,32 @@
+body {
+    background-color: #caf0f8;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 900;
+    color: #03045e;
+    text-decoration: underline #03045e;
+    text-transform: uppercase;
+}
+
+div {
+    text-align: center;
+    border-color: #c7f9cc;
+}
+
+
+#normal {
+    color: #31572c;
+    font-size: 70px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#hacker {
+    color: #d00000;
+    font-size: 70px;
+    font-weight: 300;
+    text-decoration: none;
+}
