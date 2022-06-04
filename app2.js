@@ -51,7 +51,7 @@ function isSame(list2, list1) {
 }
 
 
-// TODO: displaying correct tiles:
+// displaying correct tiles:
 let display = function (i) {
     buttons[i].classList.toggle('correct');
 }
@@ -60,7 +60,6 @@ let hide = function (i) {
     buttons[i].classList.toggle('correct');
 
 }
-
 
 function displayCorrectTiles() {
     let i = 900;
