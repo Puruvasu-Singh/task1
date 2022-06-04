@@ -2,17 +2,15 @@
 let currentTiles = [];
 let correctTiles = [];
 let score = 0;
-let timeLeft = 10;
-// let playerName = prompt('enter your name');
+
 
 let buttons = document.querySelectorAll('button');
 let dislpayScore = document.querySelector('#score');
 let timer = document.querySelector('#timer')
-//sound file
 
+//sound file
 let clickSound = new Audio('click.mp3')
 let endSound = new Audio('end.mp3')
-
 
 
 //correctTileGenerator:
@@ -40,7 +38,6 @@ function isSame(list2, list1) {
     return true;
 }
 
-// timer
 
 // TODO: displaying correct tiles:
 let display = function (i) {
@@ -71,7 +68,6 @@ function result() {
             dislpayScore.textContent = score;
             currentTiles = [];
             clickSound.play();
-            timeLeft = 10;
             correctTilesGenerator();
             displayCorrectTiles();
         } else {
@@ -112,7 +108,6 @@ start();
 
 // end
 function end() {
-    // clearInterval(clock);
 
     score = 0;
     currentTiles = [];
