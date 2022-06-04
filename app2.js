@@ -3,7 +3,7 @@ let currentTiles = [];
 let correctTiles = [];
 let score = 0;
 let timeLeft = 10;
-let playerName = prompt('enter your name');
+// let playerName = prompt('enter your name');
 
 let buttons = document.querySelectorAll('button');
 let dislpayScore = document.querySelector('#score');
@@ -17,6 +17,7 @@ let endSound = new Audio('end.mp3')
 
 //correctTileGenerator:
 function correctTilesGenerator() {
+
     let element = Math.floor(Math.random() * 36 + 1);
     if (correctTiles.length === 36) {
         end();
@@ -41,7 +42,6 @@ function isSame(list2, list1) {
 
 // timer
 
-
 // TODO: displaying correct tiles:
 let display = function (i) {
     buttons[i].classList.toggle('correct');
@@ -57,9 +57,10 @@ function displayCorrectTiles() {
     let i = 900;
     for (let j = 0; j < correctTiles.length; j++) {
         setTimeout(display, i, correctTiles[j] - 1);
-        setTimeout(hide, i + 700, correctTiles[j] - 1);
-        i += 700;
+        setTimeout(hide, i + 900, correctTiles[j] - 1);
+        i += 900;
     }
+
 
 
 }
@@ -127,6 +128,6 @@ function end() {
 
     } else {
         alert('thanks for playing');
-        window.location.replace('leaderboard.html')
+        window.location.replace('menu.html');
     }
 }
