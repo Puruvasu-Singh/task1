@@ -50,12 +50,6 @@ h1 {
 }
 
 
-
-
-/* .grid button:hover {
-    background-color: #d8f3dc;
-} */
-
 .grid button:active {
     background-color: #aad576;
 }
@@ -71,10 +65,10 @@ a {
     text-decoration: none;
 }
 
-#normal {
-    color: #023a12;
-}
 
-#hacker {
-    color: rgb(168, 30, 30);
+.scoreAndTime {
+    height: 70px;
+    font-size: 50px;
+    border: 100px;
+    text-align: center;
 }

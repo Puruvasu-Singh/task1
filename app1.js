@@ -1,9 +1,9 @@
-
 //initial quantities;
 let currentTiles = [];
 let correctTiles = [];
 let score = 0;
 let buttons = document.querySelectorAll('button');
+let dislpayScore = document.querySelector('#score');
 
 //correctTileGenerator:
 function correctTilesGenerator() {
@@ -48,6 +48,9 @@ function displayCorrectTiles() {
 
     }
 }
+//timer 
+
+
 //final result:
 function result() {
     //final check
@@ -55,6 +58,7 @@ function result() {
 
         if (isSimilar(correctTiles, currentTiles)) {
             score += 1;
+            dislpayScore.textContent = score;
             currentTiles = [];
             correctTilesGenerator();
             displayCorrectTiles();
@@ -93,12 +97,11 @@ setTimeout(start(), 2000);
 
 
 function end() {
-    alert(`Game Over your score is ${score}`);
     score = 0;
     currentTiles = [];
     correctTiles = [];
-
-    let again = prompt("do yo want to play again?").toLowerCase();
+    dislpayScore.textContent = 0;
+    let again = prompt("do yo want to play again? type 'yes' if you want to play again").toLowerCase();
     if (again === "yes") {
         correctTilesGenerator();
         displayCorrectTiles();
@@ -107,8 +110,3 @@ function end() {
         window.location.replace('menu.html');
     }
 }
-
-
-
-
-

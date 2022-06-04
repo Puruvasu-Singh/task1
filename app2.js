@@ -60,9 +60,6 @@ function displayCorrectTiles() {
         setTimeout(hide, i + 900, correctTiles[j] - 1);
         i += 900;
     }
-
-
-
 }
 //final result
 function result() {
