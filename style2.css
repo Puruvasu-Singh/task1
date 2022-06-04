@@ -1,18 +1,16 @@
 body {
-    background-color: #c7f9cc;
+    background-color: #9ce1f7;
 }
 
 
 .correct {
-    background-color: #aad576;
+    background-color: #00afb9;
 }
 
-.correct:active {
-    background-color: #FB8500;
-}
+
 
 table {
-    background-color: #38a3a5;
+    background-color: #4361ee;
     margin: 20px;
     border-color: black;
     padding: 10px;
@@ -21,7 +19,7 @@ table {
 
 
 tbody td {
-    background-color: #52b788;
+    background-color: #4895ef;
     border-radius: 25%;
 }
 
@@ -29,8 +27,8 @@ h1 {
     text-align: center;
     font-size: 100px;
     font-weight: 900;
-    color: #FB8500;
-    text-decoration: underline blueviolet;
+    color: #f72585;
+    text-decoration: underline #b5179e;
     text-transform: uppercase;
 }
 
@@ -50,13 +48,13 @@ h1 {
 
 
 .grid button:active {
-    background-color: #aad576;
+    background-color: #bee9e8;
 }
 
 
 div {
     text-align: center;
-    border-color: #c7f9cc;
+
 }
 
 a {
@@ -66,6 +64,7 @@ a {
 }
 
 .scoreAndTime {
+    color: #58860f;
     height: 70px;
     font-size: 50px;
     border: 100px;
