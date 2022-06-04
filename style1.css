@@ -29,8 +29,8 @@ h1 {
     text-align: center;
     font-size: 100px;
     font-weight: 900;
-    color: #FB8500;
-    text-decoration: underline blueviolet;
+    color: #b6465f;
+    text-decoration: underline #5f0f40;
     text-transform: uppercase;
 }
 
@@ -67,6 +67,7 @@ a {
 
 
 .scoreAndTime {
+    color: orange;
     height: 70px;
     font-size: 50px;
     border: 100px;
