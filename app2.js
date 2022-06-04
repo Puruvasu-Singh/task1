@@ -113,7 +113,7 @@ function end() {
     currentTiles = [];
     correctTiles = [];
     dislpayScore.textContent = 0;
-    let again = prompt("do yo want to play again?");
+    let again = prompt("do yo want to play again?Type 'yes' if you want to play again");
     if (again === "yes") {
         correctTilesGenerator();
         displayCorrectTiles();
