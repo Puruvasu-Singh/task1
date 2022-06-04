@@ -2,8 +2,8 @@
 let currentTiles = [];
 let correctTiles = [];
 let score = 0;
-
-
+let timeLeft = 15;
+let clock;
 let buttons = document.querySelectorAll('button');
 let dislpayScore = document.querySelector('#score');
 let timer = document.querySelector('#timer')
@@ -12,7 +12,19 @@ let timer = document.querySelector('#timer')
 let clickSound = new Audio('click.mp3')
 let endSound = new Audio('end.mp3')
 
+//timer
+function startClock() {
+    clock = setInterval(() => {
+        timeLeft--;
 
+        if (timeLeft > -1) {
+            timer.textContent = timeLeft;
+        } else {
+            timeLeft.textContent = "Time's Up";
+            end();
+        }
+    }, 1000);
+}
 //correctTileGenerator:
 function correctTilesGenerator() {
 
@@ -57,6 +69,7 @@ function displayCorrectTiles() {
         setTimeout(hide, i + 900, correctTiles[j] - 1);
         i += 900;
     }
+
 }
 //final result
 function result() {
@@ -70,6 +83,7 @@ function result() {
             clickSound.play();
             correctTilesGenerator();
             displayCorrectTiles();
+            timeLeft += 10;
         } else {
             endSound.play();
             end();
@@ -92,7 +106,7 @@ function result() {
 
 // game start and setting up board;
 function start() {
-
+    startClock();
     correctTilesGenerator();
     displayCorrectTiles();
 
@@ -113,11 +127,13 @@ function end() {
     currentTiles = [];
     correctTiles = [];
     dislpayScore.textContent = 0;
+    timeLeft = 15;
+    clearInterval(clock);
     let again = prompt("do yo want to play again?Type 'yes' if you want to play again");
     if (again === "yes") {
         correctTilesGenerator();
         displayCorrectTiles();
-
+        startClock();
     } else {
         alert('thanks for playing');
         window.location.replace('menu.html');
