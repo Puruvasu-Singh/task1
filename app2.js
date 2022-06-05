@@ -8,9 +8,20 @@ let buttons = document.querySelectorAll('button');
 let dislpayScore = document.querySelector('#score');
 let timer = document.querySelector('#timer')
 
+
 //sound file
 let clickSound = new Audio('click.mp3')
 let endSound = new Audio('end.mp3')
+
+
+//get name
+function getName() {
+    let name = prompt("enter your name");
+    if (name.trim() === "") {
+        name = getName();
+    }
+    return name;
+}
 
 //timer
 function startClock() {
@@ -97,7 +108,6 @@ function result() {
             } else {
                 clickSound.play();
             }
-
         }
     }
 }
@@ -121,7 +131,8 @@ start();
 
 // end
 function end() {
-
+    let name = getName();
+    window.localStorage.setItem(name, score);
     score = 0;
     currentTiles = [];
     correctTiles = [];
@@ -135,6 +146,6 @@ function end() {
         startClock();
     } else {
         alert('thanks for playing');
-        window.location.replace('menu.html');
+        window.location.replace('leaderboard.html');
     }
 }

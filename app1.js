@@ -5,6 +5,7 @@ let score = 0;
 let buttons = document.querySelectorAll('button');
 let dislpayScore = document.querySelector('#score');
 
+
 //correctTileGenerator:
 function correctTilesGenerator() {
     let element = Math.floor(Math.random() * 16 + 1);
